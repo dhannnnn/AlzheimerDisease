@@ -9,5 +9,4 @@ python-dotenv==0.18.0
 Werkzeug==2.0.1
 pillow
 tensorflow_addons
-keras.models
-keras.preprocessing
+tensorflow-cpu
