@@ -24,7 +24,7 @@
         </style>
     </head>
     <body>
-        <!-- <style>
+        <style>
 			.content {
 			  max-width: 500px;
 			  margin: auto;
@@ -37,10 +37,10 @@
 				background-position: center;
 			}
 			
-		</style> -->
+		</style>
     
 
-        <div class = "second-main" style = "height: 100% , width : 100%;">
+        <div class = "second-main">
             <nav>
                 <ul style = "padding-right: 2%;" class = "main-nav">
                     <li><a href ="/">HomePage</a></li>                
@@ -52,7 +52,7 @@
                     <h3 class="header-text">Uploaded Image</h3>
                 </row>
                 <row style = "width: 100% ; display: flex; justify-content: center;">
-                    <img class = "result-img" src={{url_for('static', filename = 'images/'+ img)}}>
+                    <img class = "result-img" src={{url_for('static', filename = '/'+ img)}}>
                 </row>
             </div>
 

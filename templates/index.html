@@ -40,7 +40,7 @@
 
         <div style = "width : 100%; padding-top : 5%;">
             <div class = "header-content">
-                 <h1 style = "text-align: center;color: white"><span class="header-content-text">Multiclass Classification Alzheimer's Disease</span></h1>
+                 <h1 style = "text-align: center;color: white"><span class="header-content-text">Multiclass Classification Alzheimer's Disease<br><br></span></h1>
             </div>
         </div>
 
@@ -53,17 +53,6 @@
                     <button class="btn btn-success btn-lg">Upload</button> 
                 </form>
             </div>
-
-            <div class="uploadOR">
-                <span>OR</span>
-            </div>
-
-            <div class="upload-link">
-                <form class = "link-form" action="/success" method="post", enctype="multipart/form-data">
-                    <input class="link-form-input" type="text" ,maxlength="1000" , name = "link" placeholder="Paste the image URL(not the site address)"/>
-                    <button class="btn btn-success btn-lg">Proceed</button> 
-                </form>
-            </div>
             <div class = "header-content-sub">
                     <p style = "text-align: center; margin-top: 15px;color: red" class="header-content-info">{{error}}</p>
             </div>
@@ -71,10 +60,10 @@
 
         <div class = "footer">
             <div class = "header-content-sub">
-                    <p style = "text-align: center;color: white" class="header-content-info">This model only accepts MRI(Magnetic Resonance Imaging) of the brain as an input to predicted</p>
+                    <p style = "text-align: center;color: white" class="header-content-info"><br><br>This model only accepts MRI(Magnetic Resonance Imaging) of the brain as an input to predicted</p>
             </div>
             <div class = "header-content-sub">
-                    <p style = "text-align: center;color:red" class="header-content-info">Mild_Demented, Moderate_Demented , Non_Demented, Very_Mild_Demented</p>
+                    <p style = "text-align: center;color:red" class="header-content-info"><br><br>Classes ;<br>Mild Demented<br>Moderate Demented<br>Non Demented<br>Very Mild Demented<br></p>
             </div>
         </div>
 	     </div>  

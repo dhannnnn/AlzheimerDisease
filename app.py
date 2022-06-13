@@ -58,7 +58,7 @@ def home():
 @app.route('/success' , methods = ['GET' , 'POST'])
 def success():
     error = ''
-    target_img = os.path.join(os.getcwd() , 'static/images')
+    target_img = os.path.join(os.getcwd() , 'static')
     if request.method == 'POST':
         if(request.form):
             link = request.form.get('link')
@@ -96,8 +96,8 @@ def success():
         elif (request.files):
             file = request.files['file']
             if file and allowed_file(file.filename):
-                file.save(os.path.join(target_img , file.filename))
-                img_path = os.path.join(target_img , file.filename)
+                file.save("static/" + (file.filename))
+                img_path = "static/" + (file.filename)
                 img = file.filename
 
                 class_result , prob_result = predict(img_path , model)
